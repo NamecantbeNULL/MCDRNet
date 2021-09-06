@@ -1,0 +1,1 @@
+python test.py --dataroot datasets --name MCDRNet --model MCDRN --dataset_mode mcdr --preprocess "" --no_flip --epoch final --gpu_ids 0
