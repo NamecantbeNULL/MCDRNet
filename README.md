@@ -25,7 +25,9 @@ Download and unzip our [pre-trained model](https://drive.google.com/file/d/1lJnp
 
 You can run `bash test.sh`
 or equivalently:
-`python test.py --dataroot datasets --name MCDRNet --model MCDRN --dataset_mode mcdr --preprocess "" --no_flip --epoch final --gpu_ids 0`
+```python
+python test.py --dataroot datasets --name MCDRNet --model MCDRN --dataset_mode mcdr --preprocess "" --no_flip --epoch final --gpu_ids 0
+```
 
 ## Acknowledgement
 
