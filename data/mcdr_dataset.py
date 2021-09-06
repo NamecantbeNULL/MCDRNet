@@ -55,7 +55,7 @@ class RandomCrop(object):
         return {'I': image, 'T': landmarks}
 
 
-class ResizeNatural3Dataset(BaseDataset):
+class mcdrDataset(BaseDataset):
     """A reflection dataset class to load data from A1, A2, B datasets, where A1(indoor) and A2(outdoor) are image sets
      without reflection, and B is a image set with reflection."""
 
