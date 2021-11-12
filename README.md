@@ -5,6 +5,8 @@ An official implementation code for paper "Multi-stage Curvature-guided Network 
 
 ## Introduction
 
+Thanks to the powerful learning capability, deep neural networks (DNNs) have acquired broad applications in single image reflection removal. The DNN-based algorithms relax the constraints of specific priors and learn to generate visually pleasant background layers from massive training data. However, most of them employ a single-stage network, directly mapping the original input to the ultimate result, which may lead to obvious reflection residue or even failure. To mitigate this deficiency, in this work, we propose a Multi-stage Curvatureguided De-Reflection Network (MCDRNet), which combines multiple network architectures in a unified framework to progressively remove the reflection. Our framework consists of three stages, where the encoder-decoders are exploited in the first two stages to recover the semantic components and a variant ResNet is leveraged in the last stage to generate the details in the background layer. In the first two stages, to introduce the structural guidance for the reflection removal, we cascade another decoder branch to restore the curvature map of the background. In addition, at the end of the first two stages, instead of directly passing the intermediate estimates to the next stage, we propose a Non-local Attention Module (NAM) to augment and transmit the features from decoders. Extensive experimental results on several public datasets demonstrate that the proposed MCDRNet outperforms the state-of-the-art methods quantitatively and generates visually better reflection removal results. 
+
 ## Requisites
 
 * Pytorch 1.6.0
